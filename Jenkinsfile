@@ -7,7 +7,7 @@ pipeline {
             steps {
                 
                 sh "mvn test"
-                echo "Webhook Test 2"
+                echo "Webhook Test 3"
 
             }
 
