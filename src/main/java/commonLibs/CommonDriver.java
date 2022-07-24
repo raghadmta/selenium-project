@@ -47,7 +47,8 @@ public class CommonDriver {
 			
 			ChromeOptions chromeOptions = new ChromeOptions();
 			
-			chromeOptions.addArguments("--headless");
+			chromeOptions.addArguments("--headless"); 
+			chromeOptions.addArguments("--disable-dev-shm-usage");
 
 			driver = new ChromeDriver(chromeOptions);
 
