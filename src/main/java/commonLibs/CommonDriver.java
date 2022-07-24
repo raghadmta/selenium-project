@@ -46,12 +46,12 @@ public class CommonDriver {
 			System.setProperty("webdriver.chrome.driver", projectDirectory + "/driver/chromedriver");
 			
 			ChromeOptions chromeOptions = new ChromeOptions();
-			
+
+			chromeOptions.addArguments("--no-sandbox");
 			chromeOptions.addArguments("--headless"); 
 			chromeOptions.addArguments("--disable-dev-shm-usage");
 			chromeOptions.addArguments("--disable-gpu");
-			chromeOptions.addArguments("--no-sandbox");
-
+			
 			driver = new ChromeDriver(chromeOptions);
 
 		} else if (browserType.equalsIgnoreCase("chrome-grid")) {
